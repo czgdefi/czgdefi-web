@@ -63,6 +63,7 @@ const config = {
       appMountId: 'app',
       filename: 'index.html',
       template: resolve('./src/index.html'),
+      favicon: './src/assets/images/logo.png'
     }),
     new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin({

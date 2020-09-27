@@ -41,10 +41,10 @@ const total = [
     name: '可提取收益',
     value: 80,
   },
-  {
-    name: '当前可以提取收益',
-    value: 0.0023,
-  }
+  // {
+  //   name: '当前可以提取收益',
+  //   value: 0.0023,
+  // }
 ]
 
 const power = [
@@ -71,7 +71,7 @@ function App() {
 
   return (
     <IntlProvider>
-      <h1>Wallet</h1>
+      {/* <h1>Wallet</h1>
       {wallet.connected ? (
         <div>
           <div>Account: {wallet.account}</div>
@@ -85,7 +85,7 @@ function App() {
             <button onClick={() => connect('walletconnect')}>Frame</button>
             <button onClick={() => connect('portis')}>Portis</button>
           </div>
-        )}
+        )} */}
       <div className="c-f-sb c-head">
         <h1 className="c-logo">CZG</h1>
         <div className="c-bag">
@@ -125,7 +125,11 @@ function App() {
             <div className="c-button c-button-line" onClick={() => setSelfStatus(true)}>增加双轨/引力算力</div>
           </div>
         </div>
+        <div className="c-button">get czg</div>
+
       </div>
+
+
       <Modal
         visible={outStatus}
         title="提取收益"
@@ -174,9 +178,9 @@ function App() {
           <div className="c-input-col">
             <input className="c-input" placeholder="请输入邀请人地址"></input>
           </div>
-          <div className="c-input-col">
+          {/* <div className="c-input-col">
             <input className="c-input" placeholder="请输入被邀请人地址"></input>
-          </div>
+          </div> */}
         </div>
       </Modal>
     </IntlProvider>
